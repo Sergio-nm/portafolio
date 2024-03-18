@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/encriptador.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="columna">
+            <!-- Fila 1 -->
+            <div class="fila">
+                <h1>Encriptador de texto</h1>
+            </div>
+            <!-- Fila 2 -->
+            <div class="fila">
+                <Textarea class="txtArea" id="txtEncriptar"></Textarea>
+            </div>
+            <!-- Fila 3 -->
+            <div class="fila">
+                <div class="columna-fila"><button class="boton" onclick="btncifrar();">Encriptar</button></div>
+                <div class="columna-fila"><button class="boton2" onclick="btndescifrar();">Desencriptar</button></div>
+                
+            </div>
+        </div>
+        <!-- Divisor de Columnas -->
+        <div class="columna">
+            <!-- Fila 1 -->
+            <div class="fila">
+                <h1>Resultado</h1>
+            </div>
+            <!-- Fila 2 -->
+            <div class="fila">
+                <Textarea id="txtCodificado" disabled></Textarea>
+            </div>
+            <!-- Fila 3 -->
+            <div class="fila">
+                <div class="columna-fila"><button class="boton3" onclick="copiarTextoYLimpiar();">Copiar</button></div>
+                <div class="columna-fila"><button class="boton2" onclick="Limpiar();">Reiniciar</button></div>
+            </div>
+        </div>
+    </div>
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+          <span class="cerrar" onclick="cerrarModal()">&times;</span>
+          <div class="modal-contenido-inner">
+            <h2 id="aviso"></h2>
+            <p id="mensaje"></p>
+          </div>
+          
+          <div class="modal-footer">
+            <button id="aceptarModal"  onclick="cerrarModal()">Aceptar</button>
+          </div>
+        </div>
+        
+      </div>
+
+</body>
+</html>
